@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝔧𝔬𝔥𝔬𝔯𝔞!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffae6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff6347;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            color: #3e4e8c;
+            text-align: center;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 4s ease-out 2s forwards;
+        }
+
+        .heart {
+            font-size: 50px;
+            color: #ff69b4;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animation for fadeIn effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Button style */
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>You're Amazing, 𝖒𝖎𝖘𝖘 𝖏𝖔𝖍𝖔𝖗𝖆</h1>
+    <p class="message">I just wanted to take a moment to say you're a really special person. Thank you for being amazing!</p>
+
+    <!-- Heart Icon to show affection -->
+    <div class="heart" onclick="animateHeart()">❤️</div>
+
+    <!-- Button that triggers a sweet alert -->
+    <button class="button" onclick="showAlert()">Click Me for a Surprise!</button>
+
+    <script>
+        // Function to show an alert with a sweet message
+        function showAlert() {
+            alert("You make my day brighter every time I see you! 🌟");
+        }
+
+        // Heart animation function
+        function animateHeart() {
+            const heart = document.querySelector('.heart');
+            heart.
